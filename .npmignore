@@ -1,0 +1,37 @@
+# Source files
+src/
+tsconfig.json
+tsup.config.ts
+vitest.config.ts
+
+# Development files
+*.md
+.eslintrc.*
+.prettierrc.*
+CLAUDE.md
+
+# Test files
+test/
+
+# Build artifacts
+node_modules/
+*.log
+
+# Version control
+.git/
+.gitignore
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# CSV data files
+*.csv
+
+# Lock files
+pnpm-lock.yaml
+package-lock.json
+yarn.lock

@@ -1,0 +1,75 @@
+{
+  "name": "@bitmappunks/avatar-generator",
+  "version": "0.0.5",
+  "description": "TypeScript-based procedural avatar/image generator for 24x24 pixel bitmap images",
+  "author": "BitmapPunks",
+  "license": "MIT",
+  "packageManager": "pnpm@10.8.1",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "bin": "./dist/bin.js",
+  "keywords": [
+    "bitmappunks",
+    "avatar",
+    "generator",
+    "procedural",
+    "24x24",
+    "bitmap"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "pnpm build",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "lint": "eslint \"src/**/*.ts\" --fix",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run"
+  },
+  "dependencies": {
+    "sha.js": "2.4.12"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "3.3.1",
+    "@types/node": "22.13.15",
+    "@types/sha.js": "2.4.4",
+    "@vitest/ui": "3.2.4",
+    "eslint": "9.23.0",
+    "eslint-config-prettier": "10.1.1",
+    "eslint-plugin-prettier": "5.2.5",
+    "prettier": "3.5.3",
+    "tsup": "8.5.0",
+    "tsx": "4.19.3",
+    "typescript": "5.8.2",
+    "vitest": "3.2.4"
+  },
+  "pnpm": {
+    "supportedArchitectures": {
+      "os": [
+        "linux",
+        "current"
+      ],
+      "cpu": [
+        "x64",
+        "arm64"
+      ]
+    },
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ]
+  }
+}
