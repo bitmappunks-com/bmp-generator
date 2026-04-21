@@ -16,7 +16,9 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "bin": "./dist/bin.js",
+  "bin": {
+    "avatar-generator": "dist/bin.js"
+  },
   "keywords": [
     "bitmappunks",
     "avatar",
