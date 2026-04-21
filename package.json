@@ -1,9 +1,17 @@
 {
   "name": "@bitmappunks/avatar-generator",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "TypeScript-based procedural avatar/image generator for 24x24 pixel bitmap images",
   "author": "BitmapPunks",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitmappunks-com/bmp-generator.git"
+  },
+  "homepage": "https://github.com/bitmappunks-com/bmp-generator#readme",
+  "bugs": {
+    "url": "https://github.com/bitmappunks-com/bmp-generator/issues"
+  },
   "packageManager": "pnpm@10.8.1",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
